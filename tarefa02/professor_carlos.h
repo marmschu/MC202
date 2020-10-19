@@ -1,19 +1,22 @@
 #ifndef PROFESSOR_CARLOS_H
 #define PROFESSOR_CARLOS_H
 
-typedef struct data {
+typedef struct data
+{
     int dia;
     int mes;
     int ano;
 } Data;
 
-typedef struct aluno {
+typedef struct aluno
+{
     Data nascimento;
     char nome[15];
     char sobrenome[15];
 } Aluno;
 
-typedef struct turma {
+typedef struct turma
+{
     Aluno alunos[50];
     int qtd;
 } Turma;
@@ -43,4 +46,4 @@ int add_aluno(Turma t[], Aluno A, int j);
 // retornando a quantidade de alunos restante na turma j.
 int remove_aluno(Turma t[], int j);
 
-#endif
+#endif 
